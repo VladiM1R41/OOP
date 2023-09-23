@@ -10,8 +10,8 @@ C:/Program Files/CMake/share/cmake-3.27/Modules/FindPythonInterp.cmake
 C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake
 C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake
 C:/Program Files/CMake/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake
-C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/CMakeLists.txt
-C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/cmake/Config.cmake.in
-C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/cmake/gtest.pc.in
-C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/cmake/gtest_main.pc.in
-C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/cmake/internal_utils.cmake
+C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/CMakeLists.txt
+C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/cmake/Config.cmake.in
+C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/cmake/gtest.pc.in
+C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/cmake/gtest_main.pc.in
+C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/cmake/internal_utils.cmake

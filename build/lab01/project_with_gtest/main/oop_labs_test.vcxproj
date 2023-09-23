@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B5237AA0-EAEB-3DE0-BF61-9F1317D59B30}</ProjectGuid>
+    <ProjectGuid>{D7E7FD12-3E80-3247-AB00-0B9FC1652BC8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\code\test01\OOP\build\lab01\project_with_gtest\main\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\code\OOP\build\lab01\project_with_gtest\main\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">oop_labs_test.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">oop_labs_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\code\test01\OOP\build\lab01\project_with_gtest\main\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\code\OOP\build\lab01\project_with_gtest\main\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">oop_labs_test.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">oop_labs_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\code\test01\OOP\build\lab01\project_with_gtest\main\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\code\OOP\build\lab01\project_with_gtest\main\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">oop_labs_test.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">oop_labs_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\code\test01\OOP\build\lab01\project_with_gtest\main\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\code\OOP\build\lab01\project_with_gtest\main\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">oop_labs_test.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">oop_labs_test</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,8 +86,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/include" /external:I "C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/include" /external:I "C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -106,10 +106,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -122,8 +122,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/code/test01/OOP/build/lab01/project_with_gtest/main/Debug/oop_labs_test.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/code/test01/OOP/build/lab01/project_with_gtest/main/Debug/oop_labs_test.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/code/OOP/build/lab01/project_with_gtest/main/Debug/oop_labs_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/code/OOP/build/lab01/project_with_gtest/main/Debug/oop_labs_test.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -132,8 +132,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/include" /external:I "C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/include" /external:I "C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
@@ -152,10 +152,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -168,8 +168,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/code/test01/OOP/build/lab01/project_with_gtest/main/Release/oop_labs_test.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/code/test01/OOP/build/lab01/project_with_gtest/main/Release/oop_labs_test.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/code/OOP/build/lab01/project_with_gtest/main/Release/oop_labs_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/code/OOP/build/lab01/project_with_gtest/main/Release/oop_labs_test.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -178,8 +178,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/include" /external:I "C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/include" /external:I "C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
@@ -198,10 +198,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -214,8 +214,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/code/test01/OOP/build/lab01/project_with_gtest/main/MinSizeRel/oop_labs_test.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/code/test01/OOP/build/lab01/project_with_gtest/main/MinSizeRel/oop_labs_test.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/code/OOP/build/lab01/project_with_gtest/main/MinSizeRel/oop_labs_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/code/OOP/build/lab01/project_with_gtest/main/MinSizeRel/oop_labs_test.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -224,8 +224,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest/include" /external:I "C:/code/test01/OOP/lab01/project_with_gtest/main/googletest/googletest"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest/include" /external:I "C:/code/OOP/lab01/project_with_gtest/main/googletest/googletest"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -243,10 +243,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\code\test01\OOP\lab01\project_with_gtest\main\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\code\OOP\lab01\project_with_gtest\main\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\include;C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -259,8 +259,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/code/test01/OOP/build/lab01/project_with_gtest/main/RelWithDebInfo/oop_labs_test.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/code/test01/OOP/build/lab01/project_with_gtest/main/RelWithDebInfo/oop_labs_test.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/code/OOP/build/lab01/project_with_gtest/main/RelWithDebInfo/oop_labs_test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/code/OOP/build/lab01/project_with_gtest/main/RelWithDebInfo/oop_labs_test.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -268,11 +268,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\code\test01\OOP\lab01\project_with_gtest\main\CMakeLists.txt">
+    <CustomBuild Include="C:\code\OOP\lab01\project_with_gtest\main\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/code/test01/OOP/lab01/project_with_gtest/main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/code/OOP/lab01/project_with_gtest/main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/code/test01/OOP -BC:/code/test01/OOP/build --check-stamp-file C:/code/test01/OOP/build/lab01/project_with_gtest/main/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/code/OOP -BC:/code/OOP/build --check-stamp-file C:/code/OOP/build/lab01/project_with_gtest/main/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -281,11 +281,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\code\test01\OOP\build\lab01\project_with_gtest\main\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\code\OOP\build\lab01\project_with_gtest\main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/code/test01/OOP/lab01/project_with_gtest/main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/code/OOP/lab01/project_with_gtest/main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/code/test01/OOP -BC:/code/test01/OOP/build --check-stamp-file C:/code/test01/OOP/build/lab01/project_with_gtest/main/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/code/OOP -BC:/code/OOP/build --check-stamp-file C:/code/OOP/build/lab01/project_with_gtest/main/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -294,11 +294,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\code\test01\OOP\build\lab01\project_with_gtest\main\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\code\OOP\build\lab01\project_with_gtest\main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/code/test01/OOP/lab01/project_with_gtest/main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/code/OOP/lab01/project_with_gtest/main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/code/test01/OOP -BC:/code/test01/OOP/build --check-stamp-file C:/code/test01/OOP/build/lab01/project_with_gtest/main/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/code/OOP -BC:/code/OOP/build --check-stamp-file C:/code/OOP/build/lab01/project_with_gtest/main/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -307,11 +307,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\code\test01\OOP\build\lab01\project_with_gtest\main\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\code\OOP\build\lab01\project_with_gtest\main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/code/test01/OOP/lab01/project_with_gtest/main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/code/OOP/lab01/project_with_gtest/main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/code/test01/OOP -BC:/code/test01/OOP/build --check-stamp-file C:/code/test01/OOP/build/lab01/project_with_gtest/main/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/code/OOP -BC:/code/OOP/build --check-stamp-file C:/code/OOP/build/lab01/project_with_gtest/main/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -320,30 +320,30 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\code\test01\OOP\build\lab01\project_with_gtest\main\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\code\OOP\build\lab01\project_with_gtest\main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\code\test01\OOP\lab01\project_with_gtest\main\test\tests01.cpp" />
+    <ClCompile Include="C:\code\OOP\lab01\project_with_gtest\main\test\tests01.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\code\test01\OOP\build\ZERO_CHECK.vcxproj">
-      <Project>{5ABA1BD0-A9EB-33B5-A6AA-F66F8F2350CD}</Project>
+    <ProjectReference Include="C:\code\OOP\build\ZERO_CHECK.vcxproj">
+      <Project>{026C683D-F023-3B52-9EFA-0E8C17F28C94}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\code\test01\OOP\build\lab01\project_with_gtest\main\googletest\googletest\gtest.vcxproj">
-      <Project>{E956261F-864E-3737-AE95-E8AA105C0BA5}</Project>
+    <ProjectReference Include="C:\code\OOP\build\lab01\project_with_gtest\main\googletest\googletest\gtest.vcxproj">
+      <Project>{C8944E9A-B508-324F-A119-F6E9293F1429}</Project>
       <Name>gtest</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\code\test01\OOP\build\lab01\project_with_gtest\main\googletest\googletest\gtest_main.vcxproj">
-      <Project>{0E89DD44-9065-35E5-A8E7-450C7E65D536}</Project>
+    <ProjectReference Include="C:\code\OOP\build\lab01\project_with_gtest\main\googletest\googletest\gtest_main.vcxproj">
+      <Project>{0EDE3FCF-023E-3E9D-864C-DA1965180471}</Project>
       <Name>gtest_main</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\code\test01\OOP\build\lab01\project_with_gtest\main\oop_labs_lib.vcxproj">
-      <Project>{2C622F26-6C0D-35D2-978A-0FF4B313209F}</Project>
+    <ProjectReference Include="C:\code\OOP\build\lab01\project_with_gtest\main\oop_labs_lib.vcxproj">
+      <Project>{0CD10F05-9FEC-30BB-8623-7B1F82F7BF6E}</Project>
       <Name>oop_labs_lib</Name>
     </ProjectReference>
   </ItemGroup>

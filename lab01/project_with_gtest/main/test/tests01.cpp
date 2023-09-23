@@ -35,7 +35,7 @@ TEST(test_06, basic_test_set)
 
 TEST(test_07, basic_test_set)
 {
-    ASSERT_TRUE(calculator(-101)==true);
+    ASSERT_TRUE(calculator(-101)==false);
 }
 
 TEST(test_08, basic_test_set)

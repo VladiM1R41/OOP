@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googletest\src\gtest-all.cc">
+    <ClCompile Include="C:\code\OOP\lab01\project_with_gtest\main\googletest\googletest\src\gtest-all.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googlemock\src\gmock-all.cc">
+    <ClCompile Include="C:\code\OOP\lab01\project_with_gtest\main\googletest\googlemock\src\gmock-all.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googlemock\src\gmock_main.cc">
+    <ClCompile Include="C:\code\OOP\lab01\project_with_gtest\main\googletest\googlemock\src\gmock_main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\code\test01\OOP\lab01\project_with_gtest\main\googletest\googlemock\CMakeLists.txt" />
+    <CustomBuild Include="C:\code\OOP\lab01\project_with_gtest\main\googletest\googlemock\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{E0158386-1D4A-34B9-8CD8-0AAF4E6EB21E}</UniqueIdentifier>
+      <UniqueIdentifier>{60D3C0A0-7393-35DD-84FE-E7EEA935DE94}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-# Install script for directory: C:/code/test01/OOP/lab01/project_with_gtest/main/googletest
+# Install script for directory: C:/code/OOP/lab01/project_with_gtest/main/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/code/test01/OOP/build/lab01/project_with_gtest/main/googletest/googlemock/cmake_install.cmake")
+  include("C:/code/OOP/build/lab01/project_with_gtest/main/googletest/googlemock/cmake_install.cmake")
 
 endif()
 
