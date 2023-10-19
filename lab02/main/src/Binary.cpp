@@ -26,12 +26,11 @@ int Binary::to_decimal() const{
 
 Binary::Binary() : _size(0), _array{nullptr}
 {
-    std::cout << "Default constructor" << std::endl;
+
 }
 
 Binary::Binary(const size_t &n, unsigned char t)
 {
-    std::cout << "Fill constructor" << std::endl;
     _array = new unsigned char[n];
     for (size_t i = 0; i < n; ++i)
         _array[i] = t;
@@ -40,7 +39,6 @@ Binary::Binary(const size_t &n, unsigned char t)
 
 Binary::Binary(const std::initializer_list<unsigned char> &t)
 {
-    std::cout << "Initializer list constructor" << std::endl;
     _array = new unsigned char[t.size()];
     size_t i{0};
     for (auto &c : t)
@@ -50,7 +48,6 @@ Binary::Binary(const std::initializer_list<unsigned char> &t)
 
 Binary::Binary(const std::string &t)
 {
-    std::cout << "Copy string constructor" << std::endl;
     _array = new unsigned char[t.size()];
     _size  = t.size();
 
@@ -59,7 +56,6 @@ Binary::Binary(const std::string &t)
 
 Binary::Binary(const Binary &other)
 {
-    std::cout << "Copy constructor" << std::endl;
     _size  = other._size;
     _array = new unsigned char[_size];
 
@@ -68,7 +64,6 @@ Binary::Binary(const Binary &other)
 
 Binary::Binary(Binary &&other) noexcept
 {
-    std::cout << "Move constructor" << std::endl;
     _size = other._size;
     _array = other._array;
 
