@@ -101,17 +101,11 @@ std::ostream& operator<<(std::ostream& os, const Hexagon& pent) {
 }
 
 std::istream& operator>>(std::istream& is, Hexagon& pent) {
-    std::cout << "Введите левую нижнюю вершину шестиугольника: ";
     is >> pent.left_lower;
-    std::cout << "Введите правую нижнюю вершину шестиугольника: ";
     is >> pent.right_lower;
-    std::cout << "Введите левую среднюю вершину шестиугольника: ";
     is >> pent.left_middle;
-    std::cout << "Введите правую среднюю вершину шестиугольника: ";
     is >> pent.right_middle;
-    std::cout << "Введите левую верхнюю вершину шестиугольника: ";
     is >> pent.left_upper;
-    std::cout << "Введите правую верхнюю вершину шестиугольника: ";
     is >> pent.right_upper;
 
 

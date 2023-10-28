@@ -70,13 +70,9 @@ std::ostream& operator<<(std::ostream& os, const Rhomb& rhomb){
 }
 
 std::istream& operator>>(std::istream& is, Rhomb& rhomb) {
-    std::cout << "Введите верхнюю точку ромба: ";
     is >> rhomb.upper_vertex;
-    std::cout << "введите левую вершину ромба: ";
     is >> rhomb.left_vertex;
-    std::cout << "введите правую вершину ромба: ";
     is >> rhomb.right_vertex;
-    std::cout << "введите нижнюю вершину ромба: ";
     is >> rhomb.lower_vertex;
 
     rhomb.figure_name = "rhomb";

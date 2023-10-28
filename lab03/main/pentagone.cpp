@@ -92,15 +92,10 @@ std::ostream& operator<<(std::ostream& os, const Pentagone& pent) {
 }
 
 std::istream& operator>>(std::istream& is, Pentagone& pent) {
-    std::cout << "Введите левую нижнюю вершину пятиугольника: ";
     is >> pent.left_lower;
-    std::cout << "Введите правую нижнюю вершину пятиугольника: ";
     is >> pent.right_lower;
-    std::cout << "Введите левую среднюю вершину пятиугольника: ";
     is >> pent.left_middle;
-    std::cout << "Введите правую среднюю вершину пятиугольника: ";
     is >> pent.right_middle;
-    std::cout << "Введите верхнюю вершину пятиугольника: ";
     is >> pent.upper;
 
     pent.figure_name = "pentagone";
