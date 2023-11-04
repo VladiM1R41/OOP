@@ -1,5 +1,0 @@
-C:/code/OOP/lab03/build/CMakeFiles/lab3_lib.dir
-C:/code/OOP/lab03/build/CMakeFiles/lab3_exe.dir
-C:/code/OOP/lab03/build/CMakeFiles/lab3_test.dir
-C:/code/OOP/lab03/build/CMakeFiles/ALL_BUILD.dir
-C:/code/OOP/lab03/build/CMakeFiles/ZERO_CHECK.dir
