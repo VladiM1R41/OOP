@@ -14,28 +14,12 @@ class Hexagon final: public Figure<T> {
     Point<T> right_upper;
 
     virtual std::ostream& print(std::ostream& os) const noexcept override {
-        os << "Left Lower: " << this -> left_lower << "\n";
-        os << "Right Lower: " << this -> right_lower << "\n";
-        os << "Left Middle: " << this -> left_middle << "\n";
-        os << "Right Middle: " << this -> right_middle << "\n";
-        os << "Left Upper: " << this -> left_upper << "\n";
-        os << "Right Upper: " << this -> right_upper << "\n";
+        os <<this -> left_lower << " , " <<this -> right_lower << " , " <<this -> left_middle << " , " << this -> right_middle << " , " << this -> left_upper << " , " << this -> right_upper << "\n";
         return os;
     }
 
     virtual std::istream& input(std::istream& is) noexcept override {
-        std::cout << "Enter left_lower point: ";
-        is >> this -> left_lower;
-        std::cout << "Enter right_lower point: ";
-        is >> this -> right_lower;
-        std::cout << "Enter left_middle point: ";
-        is >> this -> left_middle;
-        std::cout << "Enter right_middle point: ";
-        is >> this -> right_middle;
-        std::cout << "Enter left_upper point: ";
-        is >> this -> left_upper;
-        std::cout << "Enter right_upper point: ";
-        is >> this -> right_upper;
+        is >> this -> left_lower >> this -> right_lower >> this -> left_middle >> this -> right_middle >> this -> left_upper >> this -> right_upper;
         return is;
     }
 

@@ -13,24 +13,11 @@ class Pentagone final: public Figure<T> {
     Point<T> upper;
 
     virtual std::ostream& print(std::ostream& os) const noexcept override {
-        os << "Left Lower: " << this -> left_lower << "\n";
-        os << "Right Lower: " << this -> right_lower << "\n";
-        os << "Left Middle: " << this -> left_middle << "\n";
-        os << "Right Middle: " << this -> right_middle << "\n";
-        os << "Upper: " << this -> upper << "\n";
+        os << " , " << this -> left_lower << " , "<< this -> right_lower << " , "<< this -> left_middle << " , "<< this -> right_middle << " , " << this -> upper << "\n";
         return os;
     }
     virtual std::istream& input(std::istream& is) noexcept override {
-        std::cout << "Enter left_lower point: ";
-        is >> this -> left_lower;
-        std::cout << "Enter right_lower point: ";
-        is >> this -> right_lower;
-        std::cout << "Enter left_middle point: ";
-        is >> this -> left_middle;
-        std::cout << "Enter right_middle point: ";
-        is >> this -> right_middle;
-        std::cout << "Enter upper point: ";
-        is >> this -> upper;
+        is >> this -> left_lower>> this -> right_lower >> this -> left_middle >> this -> right_middle >> this -> upper;
         return is;
     }
 

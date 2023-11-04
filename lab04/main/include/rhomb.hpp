@@ -20,14 +20,7 @@ class Rhomb final: public Figure<T> {
         return os;
     }
     virtual std::istream& input(std::istream& is) noexcept override {
-        std::cout << "Enter upper point: ";
-        is >> upper;
-        std::cout << "Enter lower point: ";
-        is >> lower;
-        std::cout << "Enter left point: ";
-        is >> left;
-        std::cout << "Enter right point: ";
-        is >> right;
+        is >> upper >> lower >> left >> right;
         return is;
     }
 
