@@ -14,11 +14,6 @@ class Allocator {
         using const_pointer = const T *;
         using size_type = std::size_t;
 
-        template <typename U>
-        struct rebind {
-            using other = Allocator<U, BatchSize>;
-        };
-
         Allocator() {
             for (std::size_t i = 0; i < BatchSize; ++i) {
                 T* ptr = new T();
@@ -35,12 +30,9 @@ class Allocator {
         }
 
         template <typename U>
-        Allocator(const Allocator<U, BatchSize>&) {
-            for (std::size_t i = 0; i < BatchSize; ++i) {
-                T* ptr = new T();
-                freeList.push_back(ptr);
-            }
-        }
+        struct rebind {
+            using other = Allocator<U, BatchSize>;
+        };
 
         T* allocate(std::size_t n) {
             if (n > BatchSize || n == 0) {
