@@ -13,7 +13,7 @@ class List{
             std::unique_ptr<ListItem> next;
             T value;
             void push_back(T& value){
-                if(next) next->push_back(value); // рекурсивный вызов
+                if(next) next->push_back(value);
                  else
                  {
                      next =  std::make_unique<ListItem>(ListItem {std::unique_ptr<ListItem>(),value});
@@ -22,7 +22,7 @@ class List{
 
             T& get(size_t index){
                 if( index == 0 ) return value;
-                if( next) return next->get(--index); // рекурсивный вызов
+                if( next) return next->get(--index);
                 throw std::logic_error("Out of bounds"); 
             }
 
@@ -32,7 +32,7 @@ class List{
                     return;
                 } else 
                 if(next) {
-                    return next->insert(*this,--index,value); // рекурсивный вызов
+                    return next->insert(*this,--index,value);
                 }
                 throw std::logic_error("Out of bounds"); 
             }
@@ -43,7 +43,7 @@ class List{
                     return;
                 } else 
                 if(next) {
-                    return next->erase(*this,--index); // рекурсивный вызов
+                    return next->erase(*this,--index);
                 }
                 throw std::logic_error("Out of bounds"); 
             }
@@ -59,15 +59,15 @@ class List{
         using value_type = T;
         class ListIterator{
             private:
-                List&   list; // ссылка на список
-                size_t  index; // работа через индексы медленее но без инвалидации
+                List&   list;
+                size_t  index; 
                 friend class List;
             public:
-                using difference_type = int ; // в чем меряем расстояние
+                using difference_type = int ;
                 using value_type = List::value_type;
                 using reference = List::value_type& ;
                 using pointer = List::value_type*;
-                using iterator_category = std::forward_iterator_tag;//std::random_access_iterator_tag;
+                using iterator_category = std::forward_iterator_tag;
 
                 ListIterator(List &l,int i) : list(l), index(i){
                 } 
@@ -101,15 +101,15 @@ class List{
 
         class ConstListIterator{
             private:
-                const List&   list; // ссылка на константный список
-                size_t  index; // работа через индексы медленее но без инвалидации
+                const List&   list; 
+                size_t  index;
                 friend class List;
             public:
-                using difference_type = int ; // в чем меряем расстояние
+                using difference_type = int ;
                 using value_type = List::value_type;
                 using reference = const List::value_type& ;
                 using pointer = const List::value_type*;
-                using iterator_category = std::forward_iterator_tag;//std::random_access_iterator_tag;
+                using iterator_category = std::forward_iterator_tag;
 
                 ConstListIterator(const List &l, int i) : list(l), index(i){
                 } 
