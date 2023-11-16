@@ -259,34 +259,34 @@ INSTALL_GTEST:BOOL=ON
 PYTHON_EXECUTABLE:FILEPATH=D:/Python/python.exe
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=C:/code/OOP/build/lab04/main/googletest/googlemock
+gmock_BINARY_DIR:STATIC=C:/code/OOP/build/lab05/main/googletest/googlemock
 
 //Value Computed by CMake
 gmock_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=C:/code/OOP/lab04/main/googletest/googlemock
+gmock_SOURCE_DIR:STATIC=C:/code/OOP/lab05/main/googletest/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=C:/code/OOP/build/lab04/main/googletest
+googletest-distribution_BINARY_DIR:STATIC=C:/code/OOP/build/lab05/main/googletest
 
 //Value Computed by CMake
 googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=C:/code/OOP/lab04/main/googletest
+googletest-distribution_SOURCE_DIR:STATIC=C:/code/OOP/lab05/main/googletest
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=C:/code/OOP/build/lab04/main/googletest/googletest
+gtest_BINARY_DIR:STATIC=C:/code/OOP/build/lab05/main/googletest/googletest
 
 //Value Computed by CMake
 gtest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=C:/code/OOP/lab04/main/googletest/googletest
+gtest_SOURCE_DIR:STATIC=C:/code/OOP/lab05/main/googletest/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -308,22 +308,22 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
-lab4_BINARY_DIR:STATIC=C:/code/OOP/build/lab04/main
+lab4_BINARY_DIR:STATIC=C:/code/OOP/build/lab05/main
 
 //Value Computed by CMake
 lab4_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-lab4_SOURCE_DIR:STATIC=C:/code/OOP/lab04/main
+lab4_SOURCE_DIR:STATIC=C:/code/OOP/lab05/main
 
 //Value Computed by CMake
-oop_example_04_BINARY_DIR:STATIC=C:/code/OOP/build/lab04
+oop_example_05_BINARY_DIR:STATIC=C:/code/OOP/build/lab05
 
 //Value Computed by CMake
-oop_example_04_IS_TOP_LEVEL:STATIC=OFF
+oop_example_05_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-oop_example_04_SOURCE_DIR:STATIC=C:/code/OOP/lab04
+oop_example_05_SOURCE_DIR:STATIC=C:/code/OOP/lab05
 
 //Value Computed by CMake
 oop_labs_BINARY_DIR:STATIC=C:/code/OOP/build
@@ -511,7 +511,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=C:/Program Files (x86)/oop_labs
-generated_dir:INTERNAL=C:/code/OOP/build/lab04/main/googletest/googletest/generated
+generated_dir:INTERNAL=C:/code/OOP/build/lab05/main/googletest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

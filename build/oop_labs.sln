@@ -22,33 +22,33 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vc
 	ProjectSection(ProjectDependencies) = postProject
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock", "lab04\main\googletest\googlemock\gmock.vcxproj", "{C288F7E8-C93F-3852-BC2D-0B1397F61DE9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock", "lab05\main\googletest\googlemock\gmock.vcxproj", "{C288F7E8-C93F-3852-BC2D-0B1397F61DE9}"
 	ProjectSection(ProjectDependencies) = postProject
 		{026C683D-F023-3B52-9EFA-0E8C17F28C94} = {026C683D-F023-3B52-9EFA-0E8C17F28C94}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock_main", "lab04\main\googletest\googlemock\gmock_main.vcxproj", "{F12FD558-5FD5-33F8-90F1-75F8BCAFC917}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmock_main", "lab05\main\googletest\googlemock\gmock_main.vcxproj", "{F12FD558-5FD5-33F8-90F1-75F8BCAFC917}"
 	ProjectSection(ProjectDependencies) = postProject
 		{026C683D-F023-3B52-9EFA-0E8C17F28C94} = {026C683D-F023-3B52-9EFA-0E8C17F28C94}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest", "lab04\main\googletest\googletest\gtest.vcxproj", "{C8944E9A-B508-324F-A119-F6E9293F1429}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest", "lab05\main\googletest\googletest\gtest.vcxproj", "{C8944E9A-B508-324F-A119-F6E9293F1429}"
 	ProjectSection(ProjectDependencies) = postProject
 		{026C683D-F023-3B52-9EFA-0E8C17F28C94} = {026C683D-F023-3B52-9EFA-0E8C17F28C94}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_main", "lab04\main\googletest\googletest\gtest_main.vcxproj", "{0EDE3FCF-023E-3E9D-864C-DA1965180471}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gtest_main", "lab05\main\googletest\googletest\gtest_main.vcxproj", "{0EDE3FCF-023E-3E9D-864C-DA1965180471}"
 	ProjectSection(ProjectDependencies) = postProject
 		{026C683D-F023-3B52-9EFA-0E8C17F28C94} = {026C683D-F023-3B52-9EFA-0E8C17F28C94}
 		{C8944E9A-B508-324F-A119-F6E9293F1429} = {C8944E9A-B508-324F-A119-F6E9293F1429}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oop_labs_exe", "lab04\main\oop_labs_exe.vcxproj", "{38FB6DF8-E282-3ADD-8A2D-59E911B471D3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oop_labs_exe", "lab05\main\oop_labs_exe.vcxproj", "{38FB6DF8-E282-3ADD-8A2D-59E911B471D3}"
 	ProjectSection(ProjectDependencies) = postProject
 		{026C683D-F023-3B52-9EFA-0E8C17F28C94} = {026C683D-F023-3B52-9EFA-0E8C17F28C94}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oop_labs_test", "lab04\main\oop_labs_test.vcxproj", "{D7E7FD12-3E80-3247-AB00-0B9FC1652BC8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "oop_labs_test", "lab05\main\oop_labs_test.vcxproj", "{D7E7FD12-3E80-3247-AB00-0B9FC1652BC8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{026C683D-F023-3B52-9EFA-0E8C17F28C94} = {026C683D-F023-3B52-9EFA-0E8C17F28C94}
 		{C8944E9A-B508-324F-A119-F6E9293F1429} = {C8944E9A-B508-324F-A119-F6E9293F1429}
