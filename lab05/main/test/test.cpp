@@ -11,6 +11,28 @@ TEST(ListTest, push_backElements) {
     ASSERT_EQ(list.size(), 3);
 }
 
+TEST(ListTest, insertElements) {
+    List<int> list;
+    list.push_back(0);
+    //std::cout <<"!!"<< *list.begin() << std::endl;
+    list.insert(list.begin(),2);
+    list.insert(++list.begin(),1);
+    //for(auto i:list ) std::cout << i << std::endl;
+    ASSERT_EQ(list.size(), 3);
+}
+
+TEST(ListTest, eraseElements) {
+    List<int> list;
+    list.push_back(0);
+    list.push_back(1);
+    list.push_back(2);
+    for (int i = 0; i < 3; ++i){
+        list.erase(list.begin());
+    }
+    ASSERT_EQ(list.size(), 0);
+}
+
+
 TEST(ListTest, IteratorTest1) {
     List<int> list;
     list.push_back(0);
