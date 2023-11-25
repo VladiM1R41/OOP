@@ -6,7 +6,7 @@
 #include <utility>
 
 //#define DEBUG
-template <typename T, std::size_t BatchSize>
+template <typename T>
 class Allocator {
     public:
         using value_type = T;
@@ -14,16 +14,11 @@ class Allocator {
         using const_pointer = const T *;
         using size_type = std::size_t;
 
-        Allocator() {
-            for (std::size_t i = 0; i < BatchSize; ++i) {
-                T* ptr = new T();
-                freeList.push_back(ptr);
-            }
-        }
+        Allocator() noexcept {}
 
         ~Allocator() {
-            if (!freeList.empty()){
-                for (T* ptr : freeList) {
+            if (!usedBlocks.empty()){
+                for (T* ptr : usedBlocks) {
                     delete ptr;
                 }
             }
@@ -31,25 +26,21 @@ class Allocator {
 
         template <typename U>
         struct rebind {
-            using other = Allocator<U, BatchSize>;
+            using other = Allocator<U>;
         };
 
         T* allocate(std::size_t n) {
-            if (n > BatchSize || n == 0) {
-                throw std::bad_alloc();
-            }
-
-            if (freeList.empty()) {
-                for (std::size_t i = 0; i < BatchSize; ++i) {
+            if (usedBlocks.empty()) {
+                for (std::size_t i = 0; i < 10; ++i) {
                     T* ptr = new T();
-                    freeList.push_back(ptr);
+                    usedBlocks.push_back(ptr);
                 }
             }
 
             std::list<T*> allocatedBlocks;
             for (std::size_t i = 0; i < n; ++i) {
-                T* ptr = freeList.front();
-                freeList.pop_front();
+                T* ptr = usedBlocks.front();
+                usedBlocks.pop_front();
                 allocatedBlocks.push_back(ptr);
             }
 
@@ -60,14 +51,14 @@ class Allocator {
             //if (n != 1) {
             //    throw std::bad_alloc();
             //}
-            //freeList.push_back(ptr);
-            for (std::size_t i = 0; i < n; ++i) {
-                T* elementPtr = ptr + i;
-                freeList.push_back(elementPtr);
-            }
+            usedBlocks.push_back(ptr);
+            // for (std::size_t i = 0; i < n; ++i) {
+            //     T* elementPtr = ptr + i;
+            //     usedBlocks.push_back(elementPtr);
+            // }
         }
 
     private:
-        std::list<T*> freeList;
+        std::list<T*> usedBlocks;
 };
 

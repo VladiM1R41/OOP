@@ -6,7 +6,7 @@
 #include <exception>
 #include <iterator>
 
-template <class T> 
+template <class T, class Allocator = std::allocator<T>> 
 class List{
     private:
         struct ListItem{
@@ -55,6 +55,7 @@ class List{
         };
 
     std::unique_ptr<ListItem> head;
+    Allocator allocator;
     public:
         using value_type = T;
         class ListIterator{
@@ -141,6 +142,31 @@ class List{
 
         };
 
+        List(){}
+
+        List(const Allocator& allo) : allocator(allo) {}
+
+        List(const List& other) {
+            if(other.head) {
+                head = std::make_unique<ListItem>(*other.head);
+            }
+        }
+
+        ~List(){
+            head.reset();
+        }
+
+        List& operator=(const List& other) {
+            if(this != &other) {
+                if(other.head) {
+                    head = std::make_unique<ListItem>(*other.head);
+                } else {
+                    head.reset();
+                }
+            }
+            return *this;
+        }
+
         void push_back(T value){
             if(head) {
                 head->push_back(value);
@@ -180,41 +206,12 @@ class List{
             return ListIterator(*this,size());
         }
 
-        ConstListIterator erase(ConstListIterator iter) {
-            if (iter.index == 0) {
-                head = std::move(head->next);
-            } else {
-                if (head->next) head->next->erase(*head, iter.index - 1);
-            }
-
-            if (iter.index < size()) return iter;
-            return ConstListIterator(*this, size());
-        }
-
-        ConstListIterator insert (ConstListIterator iter, const T& value) {
-            if (iter.index == 0) {
-                head = std::make_unique<ListItem>(ListItem {std::move(head), value});
-            } else {
-                if (head->next) head->next->insert(*head, iter.index - 1, value);
-            }
-            if (iter.index < size()) return iter;
-            return ConstListIterator(*this, size());
-        }
-
         ListIterator begin(){
             return ListIterator(*this,0);
         }
 
         ListIterator end(){
             return ListIterator(*this,size());
-        }
-
-        ConstListIterator begin() const {
-            return ConstListIterator(*this,0);
-        }
-
-        ConstListIterator end() const {
-            return ConstListIterator(*this,size());
         }
 
         ConstListIterator cbegin(){

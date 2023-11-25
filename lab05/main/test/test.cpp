@@ -3,7 +3,7 @@
 #include "Allocator.hpp"
 
 TEST(ListTest, push_backElements) {
-    List<int> list;
+    List<int, Allocator<int>> list;
     list.push_back(0);
     list.push_back(1);
     list.push_back(2);
@@ -12,7 +12,7 @@ TEST(ListTest, push_backElements) {
 }
 
 TEST(ListTest, insertElements) {
-    List<int> list;
+    List<int, Allocator<int>> list;
     list.push_back(0);
     //std::cout <<"!!"<< *list.begin() << std::endl;
     list.insert(list.begin(),2);
@@ -22,7 +22,7 @@ TEST(ListTest, insertElements) {
 }
 
 TEST(ListTest, eraseElements) {
-    List<int> list;
+    List<int, Allocator<int>> list;
     list.push_back(0);
     list.push_back(1);
     list.push_back(2);
@@ -34,25 +34,25 @@ TEST(ListTest, eraseElements) {
 
 
 TEST(ListTest, IteratorTest1) {
-    List<int> list;
+    List<int, Allocator<int>> list;
     list.push_back(0);
     list.push_back(1);
     list.push_back(2);
 
     int expected_output = 0;
 
-    List<int>::ListIterator it = list.begin();
+    List<int, Allocator<int>>::ListIterator it = list.begin();
     ASSERT_EQ(*it, expected_output);
 }
 
 TEST(ListTest, IteratorTest2) {
-    List<int> list;
+    List<int, Allocator<int>> list;
     list.push_back(1);
     list.push_back(2);
     list.push_back(3);
 
     int expected_output = 6; 
-    List<int>::ListIterator it = list.begin();
+    List<int, Allocator<int>>::ListIterator it = list.begin();
     int ans = 1;
     while (it != list.end()) {
         ans *= *it;
@@ -63,7 +63,7 @@ TEST(ListTest, IteratorTest2) {
 }
 
 TEST(AllocatorTest, AllocateMemory) {
-    Allocator<int, 10> allocator;
+    Allocator<int> allocator;
     int* ptr = allocator.allocate(3); 
 
     ASSERT_NE(ptr, nullptr);
