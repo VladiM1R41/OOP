@@ -173,27 +173,15 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\code\OOP\build\lab05\main\googletest\googlemock\gmock.vcxproj">
-      <Project>{C288F7E8-C93F-3852-BC2D-0B1397F61DE9}</Project>
-      <Name>gmock</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\code\OOP\build\lab05\main\googletest\googlemock\gmock_main.vcxproj">
-      <Project>{F12FD558-5FD5-33F8-90F1-75F8BCAFC917}</Project>
-      <Name>gmock_main</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\code\OOP\build\lab05\main\googletest\googletest\gtest.vcxproj">
-      <Project>{C8944E9A-B508-324F-A119-F6E9293F1429}</Project>
-      <Name>gtest</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\code\OOP\build\lab05\main\googletest\googletest\gtest_main.vcxproj">
-      <Project>{0EDE3FCF-023E-3E9D-864C-DA1965180471}</Project>
-      <Name>gtest_main</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\code\OOP\build\lab05\main\oop_labs_exe.vcxproj">
+    <ProjectReference Include="C:\code\OOP\build\lab06\oop_labs_exe.vcxproj">
       <Project>{38FB6DF8-E282-3ADD-8A2D-59E911B471D3}</Project>
       <Name>oop_labs_exe</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\code\OOP\build\lab05\main\oop_labs_test.vcxproj">
+    <ProjectReference Include="C:\code\OOP\build\lab06\oop_labs_lib.vcxproj">
+      <Project>{0CD10F05-9FEC-30BB-8623-7B1F82F7BF6E}</Project>
+      <Name>oop_labs_lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\code\OOP\build\lab06\oop_labs_test.vcxproj">
       <Project>{D7E7FD12-3E80-3247-AB00-0B9FC1652BC8}</Project>
       <Name>oop_labs_test</Name>
     </ProjectReference>

@@ -51,7 +51,7 @@ class Allocator {
             //if (n != 1) {
             //    throw std::bad_alloc();
             //}
-            //usedBlocks.push_back(ptr);
+            // usedBlocks.push_back(ptr);
             for (std::size_t i = 0; i < n; ++i) {
                 T* elementPtr = ptr + i;
                 usedBlocks.push_back(elementPtr);

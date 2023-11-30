@@ -170,8 +170,7 @@ class List{
         void push_back(T value){
             if(head) {
                 head->push_back(value);
-            } else head = std::make_unique<ListItem>(ListItem {std::unique_ptr<ListItem>(),
-                                                               value});
+            } else head = std::make_unique<ListItem>(ListItem {std::unique_ptr<ListItem>(),value});
         }
 
         size_t size(){
@@ -205,7 +204,7 @@ class List{
             if(iter.index<size()) return iter;
             return ListIterator(*this,size());
         }
-
+        
         ListIterator begin(){
             return ListIterator(*this,0);
         }

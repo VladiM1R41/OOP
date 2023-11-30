@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.3.1+2badb37d1 for .NET Framework
-      Сборка начата 15.11.2023 13:51:03.
+      Сборка начата 29.11.2023 21:58:22.
       Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\3.27.5\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
         Создание каталога "Debug\\".
@@ -50,7 +50,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:02.39
+      Прошло времени 00:00:02.44
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -76,7 +76,7 @@ events:
       The output was:
       0
       MSBuild version 17.3.1+2badb37d1 for .NET Framework
-      Сборка начата 15.11.2023 13:51:06.
+      Сборка начата 29.11.2023 21:58:25.
       Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\3.27.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
         Создание каталога "Debug\\".
@@ -102,7 +102,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:00.79
+      Прошло времени 00:00:00.75
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -121,8 +121,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-sj7ize"
-      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-sj7ize"
+      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-om9a8d"
+      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-om9a8d"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -131,37 +131,37 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-sj7ize'
+        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-om9a8d'
         
-        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ec518.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_4de95.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.3.1+2badb37d1 for .NET Framework
-        Сборка начата 15.11.2023 13:51:07.
-        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sj7ize\\cmTC_ec518.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Сборка начата 29.11.2023 21:58:26.
+        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-om9a8d\\cmTC_4de95.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_ec518.dir\\Debug\\".
-          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sj7ize\\Debug\\".
-          Создание каталога "cmTC_ec518.dir\\Debug\\cmTC_ec518.tlog\\".
+          Создание каталога "cmTC_4de95.dir\\Debug\\".
+          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-om9a8d\\Debug\\".
+          Создание каталога "cmTC_4de95.dir\\Debug\\cmTC_4de95.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_ec518.dir\\Debug\\cmTC_ec518.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Создание "cmTC_4de95.dir\\Debug\\cmTC_4de95.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
         ClCompile:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ec518.dir\\Debug\\\\" /Fd"cmTC_ec518.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4de95.dir\\Debug\\\\" /Fd"cmTC_4de95.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.33.31630 для x64
           CMakeCCompilerABI.c
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ec518.dir\\Debug\\\\" /Fd"cmTC_ec518.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4de95.dir\\Debug\\\\" /Fd"cmTC_4de95.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
         Link:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sj7ize\\Debug\\cmTC_ec518.exe" /INCREMENTAL /ILK:"cmTC_ec518.dir\\Debug\\cmTC_ec518.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-sj7ize/Debug/cmTC_ec518.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-sj7ize/Debug/cmTC_ec518.lib" /MACHINE:X64  /machine:x64 cmTC_ec518.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_ec518.vcxproj -> C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sj7ize\\Debug\\cmTC_ec518.exe
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-om9a8d\\Debug\\cmTC_4de95.exe" /INCREMENTAL /ILK:"cmTC_4de95.dir\\Debug\\cmTC_4de95.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-om9a8d/Debug/cmTC_4de95.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-om9a8d/Debug/cmTC_4de95.lib" /MACHINE:X64  /machine:x64 cmTC_4de95.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_4de95.vcxproj -> C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-om9a8d\\Debug\\cmTC_4de95.exe
         FinalizeBuildStatus:
-          Файл "cmTC_ec518.dir\\Debug\\cmTC_ec518.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_ec518.dir\\Debug\\cmTC_ec518.tlog\\cmTC_ec518.lastbuildstate".
-        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sj7ize\\cmTC_ec518.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_4de95.dir\\Debug\\cmTC_4de95.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_4de95.dir\\Debug\\cmTC_4de95.tlog\\cmTC_4de95.lastbuildstate".
+        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-om9a8d\\cmTC_4de95.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:00.65
+        Прошло времени 00:00:00.64
         
       exitCode: 0
   -
@@ -173,8 +173,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-skscct"
-      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-skscct"
+      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-e81ku5"
+      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-e81ku5"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -183,37 +183,37 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-skscct'
+        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-e81ku5'
         
-        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_e7a37.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ed682.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.3.1+2badb37d1 for .NET Framework
-        Сборка начата 15.11.2023 13:51:08.
-        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-skscct\\cmTC_e7a37.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Сборка начата 29.11.2023 21:58:27.
+        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e81ku5\\cmTC_ed682.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_e7a37.dir\\Debug\\".
-          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-skscct\\Debug\\".
-          Создание каталога "cmTC_e7a37.dir\\Debug\\cmTC_e7a37.tlog\\".
+          Создание каталога "cmTC_ed682.dir\\Debug\\".
+          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e81ku5\\Debug\\".
+          Создание каталога "cmTC_ed682.dir\\Debug\\cmTC_ed682.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_e7a37.dir\\Debug\\cmTC_e7a37.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Создание "cmTC_ed682.dir\\Debug\\cmTC_ed682.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
         ClCompile:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e7a37.dir\\Debug\\\\" /Fd"cmTC_e7a37.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ed682.dir\\Debug\\\\" /Fd"cmTC_ed682.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.33.31630 для x64
           CMakeCXXCompilerABI.cpp
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e7a37.dir\\Debug\\\\" /Fd"cmTC_e7a37.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ed682.dir\\Debug\\\\" /Fd"cmTC_ed682.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-skscct\\Debug\\cmTC_e7a37.exe" /INCREMENTAL /ILK:"cmTC_e7a37.dir\\Debug\\cmTC_e7a37.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-skscct/Debug/cmTC_e7a37.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-skscct/Debug/cmTC_e7a37.lib" /MACHINE:X64  /machine:x64 cmTC_e7a37.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_e7a37.vcxproj -> C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-skscct\\Debug\\cmTC_e7a37.exe
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e81ku5\\Debug\\cmTC_ed682.exe" /INCREMENTAL /ILK:"cmTC_ed682.dir\\Debug\\cmTC_ed682.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-e81ku5/Debug/cmTC_ed682.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-e81ku5/Debug/cmTC_ed682.lib" /MACHINE:X64  /machine:x64 cmTC_ed682.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_ed682.vcxproj -> C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e81ku5\\Debug\\cmTC_ed682.exe
         FinalizeBuildStatus:
-          Файл "cmTC_e7a37.dir\\Debug\\cmTC_e7a37.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_e7a37.dir\\Debug\\cmTC_e7a37.tlog\\cmTC_e7a37.lastbuildstate".
-        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-skscct\\cmTC_e7a37.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_ed682.dir\\Debug\\cmTC_ed682.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_ed682.dir\\Debug\\cmTC_ed682.tlog\\cmTC_ed682.lastbuildstate".
+        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e81ku5\\cmTC_ed682.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:00.64
+        Прошло времени 00:00:00.59
         
       exitCode: 0
   -
@@ -228,45 +228,45 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-6loqb1"
-      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-6loqb1"
+      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-xntlf9"
+      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-xntlf9"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
     buildResult:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-6loqb1'
+        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-xntlf9'
         
-        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_61de9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_38f52.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.3.1+2badb37d1 for .NET Framework
-        Сборка начата 15.11.2023 13:51:09.
-        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\cmTC_61de9.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Сборка начата 29.11.2023 21:58:27.
+        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\cmTC_38f52.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_61de9.dir\\Debug\\".
-          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\Debug\\".
-          Создание каталога "cmTC_61de9.dir\\Debug\\cmTC_61de9.tlog\\".
+          Создание каталога "cmTC_38f52.dir\\Debug\\".
+          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\Debug\\".
+          Создание каталога "cmTC_38f52.dir\\Debug\\cmTC_38f52.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_61de9.dir\\Debug\\cmTC_61de9.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Создание "cmTC_38f52.dir\\Debug\\cmTC_38f52.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
         ClCompile:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_61de9.dir\\Debug\\\\" /Fd"cmTC_61de9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\src.c"
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38f52.dir\\Debug\\\\" /Fd"cmTC_38f52.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\src.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.33.31630 для x64
           src.c
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_61de9.dir\\Debug\\\\" /Fd"cmTC_61de9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\src.c"
-        C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\cmTC_61de9.vcxproj]
-        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\cmTC_61de9.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38f52.dir\\Debug\\\\" /Fd"cmTC_38f52.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\src.c"
+        C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\cmTC_38f52.vcxproj]
+        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\cmTC_38f52.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
         
         Ошибка сборки.
         
-        "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\cmTC_61de9.vcxproj" (целевой объект по умолчанию) (1) ->
+        "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\cmTC_38f52.vcxproj" (целевой объект по умолчанию) (1) ->
         (Целевой объект ClCompile) -> 
-          C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6loqb1\\cmTC_61de9.vcxproj]
+          C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\src.c(1,10): fatal  error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xntlf9\\cmTC_38f52.vcxproj]
         
             Предупреждений: 0
             Ошибок: 1
         
-        Прошло времени 00:00:00.43
+        Прошло времени 00:00:00.44
         
       exitCode: 1
   -
@@ -280,47 +280,47 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-lcvm3m"
-      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-lcvm3m"
+      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-atlles"
+      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-atlles"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
     buildResult:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-lcvm3m'
+        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-atlles'
         
-        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_5cac9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_38c97.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.3.1+2badb37d1 for .NET Framework
-        Сборка начата 15.11.2023 13:51:10.
-        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\cmTC_5cac9.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Сборка начата 29.11.2023 21:58:28.
+        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\cmTC_38c97.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_5cac9.dir\\Debug\\".
-          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\Debug\\".
-          Создание каталога "cmTC_5cac9.dir\\Debug\\cmTC_5cac9.tlog\\".
+          Создание каталога "cmTC_38c97.dir\\Debug\\".
+          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\Debug\\".
+          Создание каталога "cmTC_38c97.dir\\Debug\\cmTC_38c97.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_5cac9.dir\\Debug\\cmTC_5cac9.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Создание "cmTC_38c97.dir\\Debug\\cmTC_38c97.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
         ClCompile:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5cac9.dir\\Debug\\\\" /Fd"cmTC_5cac9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\CheckFunctionExists.c"
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38c97.dir\\Debug\\\\" /Fd"cmTC_38c97.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\CheckFunctionExists.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.33.31630 для x64
           CheckFunctionExists.c
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5cac9.dir\\Debug\\\\" /Fd"cmTC_5cac9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_38c97.dir\\Debug\\\\" /Fd"cmTC_38c97.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\CheckFunctionExists.c"
         Link:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\Debug\\cmTC_5cac9.exe" /INCREMENTAL /ILK:"cmTC_5cac9.dir\\Debug\\cmTC_5cac9.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-lcvm3m/Debug/cmTC_5cac9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-lcvm3m/Debug/cmTC_5cac9.lib" /MACHINE:X64  /machine:x64 cmTC_5cac9.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\cmTC_5cac9.vcxproj]
-        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\cmTC_5cac9.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\Debug\\cmTC_38c97.exe" /INCREMENTAL /ILK:"cmTC_38c97.dir\\Debug\\cmTC_38c97.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-atlles/Debug/cmTC_38c97.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-atlles/Debug/cmTC_38c97.lib" /MACHINE:X64  /machine:x64 cmTC_38c97.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\cmTC_38c97.vcxproj]
+        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\cmTC_38c97.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
         
         Ошибка сборки.
         
-        "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\cmTC_5cac9.vcxproj" (целевой объект по умолчанию) (1) ->
+        "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\cmTC_38c97.vcxproj" (целевой объект по умолчанию) (1) ->
         (Целевой объект Link) -> 
-          LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lcvm3m\\cmTC_5cac9.vcxproj]
+          LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-atlles\\cmTC_38c97.vcxproj]
         
             Предупреждений: 0
             Ошибок: 1
         
-        Прошло времени 00:00:00.48
+        Прошло времени 00:00:00.50
         
       exitCode: 1
   -
@@ -334,47 +334,47 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-1pc2vf"
-      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-1pc2vf"
+      source: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-fauiqy"
+      binary: "C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-fauiqy"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
     buildResult:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-1pc2vf'
+        Change Dir: 'C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-fauiqy'
         
-        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f5f30.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): D:/VS/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1c21b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.3.1+2badb37d1 for .NET Framework
-        Сборка начата 15.11.2023 13:51:10.
-        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\cmTC_f5f30.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Сборка начата 29.11.2023 21:58:29.
+        Проект "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\cmTC_1c21b.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_f5f30.dir\\Debug\\".
-          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\Debug\\".
-          Создание каталога "cmTC_f5f30.dir\\Debug\\cmTC_f5f30.tlog\\".
+          Создание каталога "cmTC_1c21b.dir\\Debug\\".
+          Создание каталога "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\Debug\\".
+          Создание каталога "cmTC_1c21b.dir\\Debug\\cmTC_1c21b.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_f5f30.dir\\Debug\\cmTC_f5f30.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Создание "cmTC_1c21b.dir\\Debug\\cmTC_1c21b.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
         ClCompile:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f5f30.dir\\Debug\\\\" /Fd"cmTC_f5f30.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\CheckFunctionExists.c"
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c21b.dir\\Debug\\\\" /Fd"cmTC_1c21b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\CheckFunctionExists.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.33.31630 для x64
           CheckFunctionExists.c
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f5f30.dir\\Debug\\\\" /Fd"cmTC_f5f30.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c21b.dir\\Debug\\\\" /Fd"cmTC_1c21b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\CheckFunctionExists.c"
         Link:
-          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\Debug\\cmTC_f5f30.exe" /INCREMENTAL /ILK:"cmTC_f5f30.dir\\Debug\\cmTC_f5f30.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-1pc2vf/Debug/cmTC_f5f30.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-1pc2vf/Debug/cmTC_f5f30.lib" /MACHINE:X64  /machine:x64 cmTC_f5f30.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\cmTC_f5f30.vcxproj]
-        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\cmTC_f5f30.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+          D:\\VS\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\Debug\\cmTC_1c21b.exe" /INCREMENTAL /ILK:"cmTC_1c21b.dir\\Debug\\cmTC_1c21b.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-fauiqy/Debug/cmTC_1c21b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/code/OOP/lab05/main/build/CMakeFiles/CMakeScratch/TryCompile-fauiqy/Debug/cmTC_1c21b.lib" /MACHINE:X64  /machine:x64 cmTC_1c21b.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\cmTC_1c21b.vcxproj]
+        Сборка проекта "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\cmTC_1c21b.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
         
         Ошибка сборки.
         
-        "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\cmTC_f5f30.vcxproj" (целевой объект по умолчанию) (1) ->
+        "C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\cmTC_1c21b.vcxproj" (целевой объект по умолчанию) (1) ->
         (Целевой объект Link) -> 
-          LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1pc2vf\\cmTC_f5f30.vcxproj]
+          LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\code\\OOP\\lab05\\main\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fauiqy\\cmTC_1c21b.vcxproj]
         
             Предупреждений: 0
             Ошибок: 1
         
-        Прошло времени 00:00:00.46
+        Прошло времени 00:00:00.44
         
       exitCode: 1
 ...
