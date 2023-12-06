@@ -1,224 +1,263 @@
-#ifndef LIST_H
-#define LIST_H
-
-#include <memory>
+#pragma once
 #include <iostream>
-#include <exception>
-#include <iterator>
 
-template <class T, class Allocator = std::allocator<T>> 
-class List{
+namespace mai{
+
+    template <typename T>
+    struct Node {
+        T _data;
+        Node<T>* _next;
+    };
+
+    template<typename T, template <typename> typename Allocator = std::allocator>
+    class List {
     private:
-        struct ListItem{
-            std::unique_ptr<ListItem> next;
-            T value;
-            void push_back(T& value){
-                if(next) next->push_back(value);
-                 else
-                 {
-                     next =  std::make_unique<ListItem>(ListItem {std::unique_ptr<ListItem>(),value});
-                 }
-            }
+        Node<T>* _head;
+        Node<T>* _tail;
+        size_t _size;
+        Allocator<Node<T>> _allocator;
 
-            T& get(size_t index){
-                if( index == 0 ) return value;
-                if( next) return next->get(--index);
-                throw std::logic_error("Out of bounds"); 
-            }
-
-            void insert(ListItem &prev,size_t index,const T& value){
-                if(index == 0) {
-                    prev.next = std::make_unique<ListItem>(ListItem{std::move(prev.next),value});;
-                    return;
-                } else 
-                if(next) {
-                    return next->insert(*this,--index,value);
-                }
-                throw std::logic_error("Out of bounds"); 
-            }
-
-            void erase(ListItem &prev,size_t index){
-                if(index == 0) {
-                    prev.next = std::move(next);
-                    return;
-                } else 
-                if(next) {
-                    return next->erase(*this,--index);
-                }
-                throw std::logic_error("Out of bounds"); 
-            }
-
-            size_t size(){
-                if( next) return next->size()+1;
-                return 1;
-            }
-        };
-
-    std::unique_ptr<ListItem> head;
-    Allocator allocator;
     public:
-        using value_type = T;
-        class ListIterator{
-            private:
-                List&   list;
-                size_t  index; 
-                friend class List;
-            public:
-                using difference_type = int ;
-                using value_type = List::value_type;
-                using reference = List::value_type& ;
-                using pointer = List::value_type*;
-                using iterator_category = std::forward_iterator_tag;
+        class Const_List_Iterator {
+        private:
+            const Node<T>* _node;
 
-                ListIterator(List &l,int i) : list(l), index(i){
-                } 
+        public:
+            friend class List;
 
-                ListIterator& operator++(){
-                    ++index;
-                    return *this;
+            using iterator_category = std::forward_iterator_tag;
+            using difference_type = std::ptrdiff_t;
+            using value_type = const T;
+            using pointer_type = T*;
+            using reference_type = T&;
+
+            Const_List_Iterator() = default;
+            Const_List_Iterator(const Node<T>* ptr) : _node(ptr) {}
+
+            T& operator*() const {
+                if (!_node) {
+                    throw std::runtime_error("Iterator error");
                 }
+                return _node->_data;
+            }
 
-                reference operator*(){
-                    return list[index];
+            Const_List_Iterator& operator++() {
+                if (!_node) {
+                    throw std::runtime_error("Iterator error");
                 }
+                _node = _node->_next;
+                return *this;
+            }
 
-                pointer operator->(){
-                    return &list[index];
-                }
+            bool operator==(const Const_List_Iterator& other) const {
+                return _node == other._node;
+            }
 
-                bool operator!=(const ListIterator& other) const{
-                    if(index!=other.index) return true;
-                    if(&list!=&(other.list)) return true;
-                    return false;
-                }
-
-                bool operator==(const ListIterator& other) const{
-                    if(index!=other.index) return false;
-                    if(&list!=&(other.list)) return false;
-                    return true;
-                }
+            bool operator!=(const Const_List_Iterator& other) const {
+                return !(*this == other);
+            }
 
         };
 
-        class ConstListIterator{
-            private:
-                const List&   list; 
-                size_t  index;
-                friend class List;
-            public:
-                using difference_type = int ;
-                using value_type = List::value_type;
-                using reference = const List::value_type& ;
-                using pointer = const List::value_type*;
-                using iterator_category = std::forward_iterator_tag;
+        class List_Iterator {
+        private:
+            Node<T>* _node;
 
-                ConstListIterator(const List &l, int i) : list(l), index(i){
-                } 
+        public:
+            friend class List;
 
-                ConstListIterator& operator++(){
-                    ++index;
-                    return *this;
+            using iterator_category = std::forward_iterator_tag;
+            using difference_type = std::ptrdiff_t;
+            using value_type = T;
+            using pointer_type = T*;
+            using reference_type = T&;
+
+            List_Iterator() = default;
+            List_Iterator(Node<T>* ptr) : _node(ptr) {}
+
+            T& operator*() {
+                if (!_node) {
+                    throw std::runtime_error("List_Iterator error");
                 }
+                return _node->_data;
+            }
 
-                reference operator*(){
-                    return list[index];
+            List_Iterator& operator++() {
+                if (!_node) {
+                    throw std::runtime_error("List_Iterator error");
                 }
+                _node = _node->_next;
+                return *this;
+            }
 
-                pointer operator->(){
-                    return &list[index];
-                }
-
-                bool operator!=(const ConstListIterator& other) const{
-                    if(index!=other.index) return true;
-                    if(&list!=&(other.list)) return true;
-                    return false;
-                }
-
-                bool operator==(const ConstListIterator& other) const{
-                    if(index!=other.index) return false;
-                    if(&list!=&(other.list)) return false;
-                    return true;
-                }
-
+            bool operator==(const List_Iterator other) const {
+                return _node == other._node;
+            }
+            bool operator!=(const List_Iterator other) const {
+                return !(*this == other);
+            }
         };
 
-        List(){}
+        List() : _size(0){
+            _head = _tail = _allocator.allocate(1);
+        }
 
-        List(const Allocator& allo) : allocator(allo) {}
-
-        List(const List& other) {
-            if(other.head) {
-                head = std::make_unique<ListItem>(*other.head);
+        List(std::initializer_list<T> const & init) : _size(0){
+            _head = _tail = _allocator.allocate(1);
+            for (auto el : init) {
+                this->push_back(el);
             }
         }
 
-        ~List(){
-            head.reset();
+        List(List<T, Allocator> const & other) : _size(0) {
+            List_Iterator it {other._head};
+            List_Iterator end {other._tail};
+            _head = _tail = _allocator.allocate(1);
+            for (; it != end; ++it) {
+                this->push_back(*it);
+            }
         }
 
-        List& operator=(const List& other) {
-            if(this != &other) {
-                if(other.head) {
-                    head = std::make_unique<ListItem>(*other.head);
-                } else {
-                    head.reset();
-                }
+        List(List<T, Allocator>&& other) : _head(other._head), _tail(other._tail), _size(other._size) {
+            _allocator = std::move(other._allocator);
+            other._head = nullptr;
+            other._tail = nullptr;
+            other._size = 0;
+        }
+
+        ~List() {
+            this->clear();
+            _allocator.deallocate(_head, 1);
+        }
+
+        List<T, Allocator>& operator=(const List<T, Allocator>& other) {
+            if (this == &other) {
+                return *this;
+            }
+            this->clear();
+            _size = 0;
+            List_Iterator it {other._head};
+            List_Iterator end {other._tail};
+            for (; it != end; ++it) {
+                this->push_back(*it);
             }
             return *this;
         }
 
-        void push_back(T value){
-            if(head) {
-                head->push_back(value);
-            } else head = std::make_unique<ListItem>(ListItem {std::unique_ptr<ListItem>(),value});
+        List<T, Allocator>& operator=(List<T, Allocator>&& other) noexcept {
+            this->clear();
+            _allocator.deallocate(_head, 1);
+            _head = other._head;
+            _tail = other._tail;
+            _size = other._size;
+            _allocator = std::move(other._allocator);
+            other._head = nullptr;
+            other._tail = nullptr;
+            other._size = 0;
+
+            return *this;
         }
 
-        size_t size(){
-            if(!head) return 0;
-            return head->size();
+        size_t size() const noexcept {
+            return _size;
         }
 
-        T&   operator[](size_t index){
-            if(!head) throw std::logic_error("Out of bounds");
-            return head->get(index);
+        void clear() {
+            while(!this->empty()) {
+                this->erase(List_Iterator(_head));
+            }
         }
 
-        ListIterator erase(ListIterator iter){
-            if(iter.index==0){
-                head = std::move(head->next);
-            } else {
-                if(head->next) head->next->erase(*head,iter.index-1);
+        List_Iterator insert(List_Iterator pos, const T& value) {
+            ++_size;
+            Node<T>* node = _head;
+            if(pos._node){ 
+                while(node->_next != pos._node && node->_next != nullptr){
+                    node = node->_next;
+                }
+            }else{
+                while(node->_next != nullptr){
+                    node = node->_next;
+                }
+            }
+            Node<T>* tmp = _allocator.allocate(1);
+            tmp->_data = value;
+            tmp->_next = node->_next;
+            node->_next = tmp;
+            
+            return List_Iterator(node ? node->_next : _head);
+        }
+
+        List_Iterator erase(List_Iterator pos) {
+            Node<T>* node;
+            if (pos._node){
+                if (pos._node == _head){
+                    node = _head;
+                    _head = _head->_next;
+                    --_size;
+                    _allocator.deallocate(node, 1);
+                    return List_Iterator(_head);
+                }else if(pos._node == _tail){
+                    node = _tail;
+                    Node<T>* prev_tail = _head;
+                    while(prev_tail->_next != _tail){
+                        prev_tail = prev_tail->_next;
+                    }
+                    prev_tail->_next = nullptr;
+                    _tail = prev_tail;
+                    --_size;
+                    _allocator.deallocate(node, 1);
+                    return List_Iterator(_tail);
+                }else{
+                    node = _head;
+                    while(node->_next != pos._node && node->_next != nullptr){
+                        node = node->_next;
+                    }
+                    node->_next = pos._node->_next;
+                    --_size;
+                    _allocator.deallocate(pos._node, 1);
+                    return List_Iterator(node);
+                }
+            }else{
+                throw std::logic_error("Error: element not exist");
             }
 
-            if(iter.index<size()) return iter;
-            return ListIterator(*this,size());
         }
 
-        ListIterator insert (ListIterator iter, const T& value){
-            if(iter.index==0){
-                head = std::make_unique<ListItem>(
-                            ListItem {std::move(head),value});
-            } else {
-                if(head->next) head->next->insert(*head,iter.index-1, value);
-            }
-            if(iter.index<size()) return iter;
-            return ListIterator(*this,size());
-        }
-        
-        ListIterator begin(){
-            return ListIterator(*this,0);
+        void push_back(const T& value) {
+            _tail->_next = _allocator.allocate(1);
+            _tail->_data = value;
+            _tail = _tail->_next;
+            ++_size;
         }
 
-        ListIterator end(){
-            return ListIterator(*this,size());
+
+        bool empty() const noexcept {
+            return _head == _tail;
         }
 
-        ConstListIterator cbegin(){
-            return ConstListIterator(*this,0);
+        List_Iterator begin() {
+            return List_Iterator(_head);
         }
 
-        ConstListIterator cend() {
-            return ConstListIterator(*this,size());
+        List_Iterator end() {
+            return List_Iterator(_tail->_next);
         }
-};
-#endif
+
+        Const_List_Iterator begin() const {
+            return Const_List_Iterator(_head);
+        }
+
+        Const_List_Iterator end() const {
+            return Const_List_Iterator(_tail->_next);
+        }
+
+        Const_List_Iterator cbegin() {
+            return Const_List_Iterator(_head);
+        }
+
+        Const_List_Iterator cend() {
+            return Const_List_Iterator(_tail->_next);
+        }
+    };
+}

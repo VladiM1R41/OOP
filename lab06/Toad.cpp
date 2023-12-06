@@ -16,26 +16,26 @@ void Toad::save(std::ostream &os)
     NPC::save(os);
 }
 
-bool Toad::fight(std::shared_ptr<Toad> other)
+bool Toad::visitToad(std::shared_ptr<Toad> other)
 {
     fight_notify(other, true);
     return true;
 }
 
-bool Toad::fight(std::shared_ptr<Dragon> other)
+bool Toad::visitDragon(std::shared_ptr<Dragon> other)
 {
     fight_notify(other, true);
     return true;
 }
 
-bool Toad::fight(std::shared_ptr<WanderingKnight> other)
+bool Toad::visitWanderingKnight(std::shared_ptr<WanderingKnight> other)
 {
     fight_notify(other, true);
     return true;
 }
 
-bool Toad::defense(std::shared_ptr<NPC> attacker){
-    return attacker->fight(std::dynamic_pointer_cast<Toad>(shared_from_this()));
+bool Toad::accept(std::shared_ptr<NPC> attacker){
+    return attacker->visitToad(std::dynamic_pointer_cast<Toad>(shared_from_this()));
 }
 
 std::ostream &operator<<(std::ostream &os, Toad &toad)

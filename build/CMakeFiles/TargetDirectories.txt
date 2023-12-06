@@ -1,6 +1,0 @@
-C:/code/OOP/build/CMakeFiles/ALL_BUILD.dir
-C:/code/OOP/build/CMakeFiles/ZERO_CHECK.dir
-C:/code/OOP/build/lab06/CMakeFiles/oop_labs_lib.dir
-C:/code/OOP/build/lab06/CMakeFiles/oop_labs_exe.dir
-C:/code/OOP/build/lab06/CMakeFiles/oop_labs_test.dir
-C:/code/OOP/build/lab06/CMakeFiles/ALL_BUILD.dir

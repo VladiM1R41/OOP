@@ -7,9 +7,10 @@ struct Toad : public NPC
     Toad(std::istream &is);
     void print() override;
     void save(std::ostream &os) override;
-    bool defense(std::shared_ptr<NPC> attacker) override;
-    bool fight(std::shared_ptr<Dragon> other) override;
-    bool fight(std::shared_ptr<Toad> other) override;
-    bool fight(std::shared_ptr<WanderingKnight> other) override;
+    bool accept(std::shared_ptr<NPC> attacker) override;
+    bool visitToad(std::shared_ptr<Toad> other) override;
+    bool visitDragon(std::shared_ptr<Dragon> other) override;
+    bool visitWanderingKnight(std::shared_ptr<WanderingKnight> other) override;
+
     friend std::ostream &operator<<(std::ostream &os, Toad &knight);
 };

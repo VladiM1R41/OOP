@@ -7,10 +7,8 @@ struct Dragon : public NPC
     Dragon(std::istream &is);
 
     void print() override;
-    bool defense(std::shared_ptr<NPC> attacker) override;
-    bool fight(std::shared_ptr<Dragon> other) override;
-    bool fight(std::shared_ptr<WanderingKnight> other) override;
-    bool fight(std::shared_ptr<Toad> other) override;
+    bool accept(std::shared_ptr<NPC> attacker) override;
+    bool visitWanderingKnight(std::shared_ptr<WanderingKnight> other) override;
 
     void save(std::ostream &os) override;
 

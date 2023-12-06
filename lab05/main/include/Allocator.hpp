@@ -6,59 +6,67 @@
 #include <utility>
 
 //#define DEBUG
-template <typename T>
-class Allocator {
-    public:
-        using value_type = T;
-        using pointer = T *;
-        using const_pointer = const T *;
-        using size_type = std::size_t;
+namespace mai{
+    template <typename T, size_t N = 100>
+    class Allocator {
+        private:
+            std::list<T> _used_blocks;
+            std::list<T*> _free_blocks;
+            size_t _free_count;
+            size_t _max_count = N;
 
-        Allocator() noexcept {}
+        public:
+            using value_type = T;
+            using pointer = T*;
+            using const_pointer = const T*;
+            using size_type = std::size_t;
 
-        ~Allocator() {
-            if (!usedBlocks.empty()){
-                for (T* ptr : usedBlocks) {
-                    delete ptr;
-                }
-            }
-        }
-
-        template <typename U>
-        struct rebind {
-            using other = Allocator<U>;
-        };
-
-        T* allocate(std::size_t n) {
-            if (usedBlocks.empty()) {
-                for (std::size_t i = 0; i < 10; ++i) {
-                    T* ptr = new T();
-                    usedBlocks.push_back(ptr);
+            Allocator() {
+                _free_count = _max_count;
+                for (size_t i{0}; i < _max_count; ++i) {
+                    _used_blocks.push_back(T{}); // Заполняем used_blocks для выделения памяти
+                    _free_blocks.push_back(&_used_blocks.back());
                 }
             }
 
-            std::list<T*> allocatedBlocks;
-            for (std::size_t i = 0; i < n; ++i) {
-                T* ptr = usedBlocks.front();
-                usedBlocks.pop_front();
-                allocatedBlocks.push_back(ptr);
+            ~Allocator() = default;
+
+            template <typename U>
+            struct rebind {
+                using other = Allocator<U, N>;
+            };
+
+            pointer allocate(size_t n) {
+                pointer result = nullptr;
+                if (n && (_free_count >= n)) {
+                    auto it = std::prev(_free_blocks.end(), n);
+                    result = *it;
+                    _free_count -= n;
+                    _free_blocks.erase(it, _free_blocks.end());
+                } else if (_free_count < n) {
+                    throw std::bad_alloc();
+                }
+                return result;
             }
 
-            return allocatedBlocks.front();
-        }
-
-        void deallocate(T* ptr, std::size_t n) {
-            //if (n != 1) {
-            //    throw std::bad_alloc();
-            //}
-            // usedBlocks.push_back(ptr);
-            for (std::size_t i = 0; i < n; ++i) {
-                T* elementPtr = ptr + i;
-                usedBlocks.push_back(elementPtr);
+            void deallocate(pointer ptr, size_t n) {
+                for (size_t i{0}; i < n; ++i) {
+                    _free_blocks.push_back(ptr + i);
+                }
+                _free_count += n;
             }
-        }
 
-    private:
-        std::list<T*> usedBlocks;
-};
+            template <typename U, typename... Args>
+            void construct(U* p, Args &&...args) {
+                new (p) U(std::forward<Args>(args)...);
+            }
 
+            void destroy(pointer p) {
+                p->~T();
+            }
+
+            size_type max_size() const noexcept {
+                return _max_count;
+            }
+    };
+}

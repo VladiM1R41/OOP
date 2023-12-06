@@ -10,26 +10,14 @@ void Dragon::print()
     std::cout << *this;
 }
 
-bool Dragon::fight(std::shared_ptr<Toad> other) 
-{
-    fight_notify(other, false);
-    return false;
-}
-
-bool Dragon::fight(std::shared_ptr<Dragon> other) 
-{
-    fight_notify(other, false);
-    return false;
-}
-
-bool Dragon::fight(std::shared_ptr<WanderingKnight> other) 
+bool Dragon::visitWanderingKnight(std::shared_ptr<WanderingKnight> other) 
 {
     fight_notify(other, true);
     return true;
 }
 
-bool Dragon::defense(std::shared_ptr<NPC> attacker){
-    return attacker->fight(std::dynamic_pointer_cast<Dragon>(shared_from_this()));
+bool Dragon::accept(std::shared_ptr<NPC> attacker){
+    return attacker->visitDragon(std::dynamic_pointer_cast<Dragon>(shared_from_this()));
 }
 
 void Dragon::save(std::ostream &os) 

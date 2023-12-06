@@ -42,11 +42,17 @@ struct NPC : public std::enable_shared_from_this<NPC>
     void fight_notify(const std::shared_ptr<NPC> defender,bool win);
     virtual bool is_close(const std::shared_ptr<NPC> &other, size_t distance) const;
 
-    virtual bool fight(std::shared_ptr<Toad> other) = 0;
-    virtual bool fight(std::shared_ptr<Dragon> other) = 0;
-    virtual bool fight(std::shared_ptr<WanderingKnight> other) = 0;
+    virtual bool visitToad(std::shared_ptr<Toad> other){
+        return false;
+    }
+    virtual bool visitDragon(std::shared_ptr<Dragon> other){
+        return false;
+    }
+    virtual bool visitWanderingKnight(std::shared_ptr<WanderingKnight> other){
+        return false;
+    }
     virtual void print() = 0;
-    virtual bool defense(std::shared_ptr<NPC> attacker) = 0;
+    virtual bool accept(std::shared_ptr<NPC> attacker) = 0;
 
     virtual void save(std::ostream &os);
 
