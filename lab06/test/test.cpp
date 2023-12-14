@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
-#include "NPC.cpp"
-#include "Toad.cpp"
-#include "Dragon.cpp"
-#include "WanderingKnight.cpp"
+#include "NPC.hpp"
+#include "Toad.hpp"
+#include "Dragon.hpp"
+#include "WanderingKnight.hpp"
 
 TEST(DefenseTest, ToadAttackKnight) {
     std::shared_ptr<NPC> toad = std::make_shared<Toad>(0, 5);
