@@ -48,11 +48,6 @@ TEST(AcceptTest, Toad) {
     ASSERT_TRUE(toad->accept(toad));
 }
 
-// TEST(DistanceTest, IsClose) {
-//     ASSERT_FALSE(squirrel->is_close(druid));
-//     ASSERT_FALSE(druid->is_close(werewolf));
-//     ASSERT_TRUE(werewolf->is_close(squirrel));
-// }
 
 int main(int argc, char** argv) {
     testing::InitGoogleTest(&argc, argv);
