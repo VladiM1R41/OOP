@@ -5,9 +5,11 @@
 #include "WanderingKnight.hpp"
 #include "visitor.hpp"
 
-std::shared_ptr<NPC> dragon = std::make_shared<Dragon>(21, 17);
-std::shared_ptr<NPC> wanderingKnight = std::make_shared<WanderingKnight>(20, 16);
-std::shared_ptr<NPC> toad = std::make_shared<Toad>(100, 17);
+std::shared_ptr<NPC> dragon = std::make_shared<Dragon>(25, 15);
+std::shared_ptr<NPC> wanderingKnight = std::make_shared<WanderingKnight>(20, 20);
+std::shared_ptr<NPC> toad = std::make_shared<Toad>(100, 12);
+
+
 std::shared_ptr<Visitor> dragon_visitor = std::make_shared<DragonVisitor>();
 std::shared_ptr<Visitor> wanderingKnight_visitor = std::make_shared<WanderingKnightVisitor>();
 std::shared_ptr<Visitor> toad_visitor = std::make_shared<ToadVisitor>();
